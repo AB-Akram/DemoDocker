@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    #postgres-sql i a container name
+    url: jdbc:postgresql://postgres-sql:5432/demo_docker
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
